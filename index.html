@@ -3634,38 +3634,36 @@ revealEls.forEach(el => io.observe(el));
    静态相册数据
 ════════════════════════════════════ */
 const staticPhotos = [
-  // ① 以下每项：src=图片路径, date=日期, note=备注, tag=标签
-  // 你只需修改 date / note / tag 三项，src 不要动
-  { src: 'images/IMG_20250831_124713.jpg',         date: '2025.08.31', note: '', tag: '记忆' },
-  { src: 'images/IMG_20251020_221423.jpg',         date: '2025.10.20', note: '', tag: '记忆' },
-  { src: 'images/Image_1760196165462.jpg',         date: '',           note: '', tag: '记忆' },
-  { src: 'images/Screenshot_20250315_132838.jpg',  date: '2025.03.15', note: '', tag: '记忆' },
-  { src: 'images/mmexport1741946452537.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1741967380420.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1742016525065.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1742478733947.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1742478764772.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1748442175346.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1748442565634.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1752465403529.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1753797915073.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1754219414233.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1754230504158.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1755958943078.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1757994431160.jpg',       date: '',           note: '', tag: '记忆' },
-  { src: 'images/IMG_20260411_161227.jpg',          date: '2026.04.11', note: '', tag: '记忆' },
-  { src: 'images/IMG_20260411_165033.jpg',          date: '2026.04.11', note: '', tag: '记忆' },
-  { src: 'images/mmexport1775954135689.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1776003154804.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1776003377086.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1776003408006.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/emoji1.png',                       date: '',           note: '', tag: '日常' },
-  { src: 'images/emoji-sea4.png',                   date: '',           note: '', tag: '海边' },
-  { src: 'images/emoji-xiamen2.png',                date: '',           note: '', tag: '日常' },
-  { src: 'images/emoji-dance3.png',                 date: '',           note: '', tag: '日常' },
-  { src: 'images/mmexport1768664834661.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/mmexport1764691079329.jpg',        date: '',           note: '', tag: '记忆' },
-  { src: 'images/3384153617794638135021.png',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/IMG_20250831_124713.jpg',         date: '2025.08.31', note: '又在拿我手机拍美女，你看看', tag: '记忆' },
+  { src: 'images/IMG_20251020_221423.jpg',         date: '2025.10.20', note: '小圆脸米米嘟', tag: '记忆' },
+  { src: 'images/Image_1760196165462.jpg',         date: '2025.4.1',   note: '大眼睛，小脸蛋，我是昱昱你别狂', tag: '记忆' },
+  { src: 'images/Screenshot_20250315_132838.jpg',  date: '2025.03.15', note: '看我拍的好看不', tag: '记忆' },
+  { src: 'images/mmexport1741946452537.jpg',       date: '2025.03.14', note: '风好大，韩旭呢？', tag: '记忆' },
+  { src: 'images/mmexport1741967380420.jpg',       date: '2025.03.14', note: '清冷的蓝调时刻', tag: '记忆' },
+  { src: 'images/mmexport1742016525065.jpg',       date: '2025.03.15', note: '假装分心实则勾引我，', tag: '记忆' },
+  { src: 'images/mmexport1742478733947.jpg',       date: '2025.03.20', note: 'ins拉满了，哎呦我去', tag: '记忆' },
+  { src: 'images/mmexport1742478764772.jpg',       date: '2025.03.20', note: '看看这，看看那', tag: '记忆' },
+  { src: 'images/mmexport1748442175346.jpg',       date: '2025.05.28', note: '你的生日蛋糕，今年想不想尝尝不一样的？', tag: '记忆' },
+  { src: 'images/mmexport1748442565634.jpg',       date: '2025.05.28', note: '新买的手机，你用的习惯就好', tag: '记忆' },
+  { src: 'images/mmexport1752465403529.jpg',       date: '2025.07.14', note: '别惹我，没结果', tag: '记忆' },
+  { src: 'images/mmexport1753797915073.jpg',       date: '2025.08.03', note: '呆呆和呆呆', tag: '记忆' },
+  { src: 'images/mmexport1754219414233.jpg',       date: '2025.08.03', note: '好长的油麦菜！', tag: '记忆' },
+  { src: 'images/mmexport1754230504158.jpg',       date: '2025.08.23', note: '我最喜欢的屏保来了', tag: '记忆' },
+  { src: 'images/mmexport1755958943078.jpg',       date: '2025.09.16', note: '哈哈哈哈哈哈，假如换我三天晴天，可惜那几天都下雨了，但是铜锅涮肉真好吃', tag: '记忆' },
+  { src: 'images/mmexport1757994431160.jpg',       date: '2025.08.31', note: '高中我能暗恋三年', tag: '记忆' },
+  { src: 'images/IMG_20260411_161227.jpg',          date: '2026.04.11', note: '大相框能塞下那么多人吗', tag: '记忆' },
+  { src: 'images/IMG_20260411_165033.jpg',          date: '2026.04.12', note: '美美丽丽的郁金香小姐', tag: '记忆' },
+  { src: 'images/mmexport1775954135689.jpg',        date: '2026.04.12', note: '我睡着了！可惜呀', tag: '记忆' },
+  { src: 'images/mmexport1776003154804.jpg',        date: '2026.04.12', note: '刘公岛的你和我', tag: '记忆' },
+  { src: 'images/mmexport1776003377086.jpg',        date: '2026.04.12', note: '这双鞋子真好看', tag: '记忆' },
+  { src: 'images/mmexport1776003408006.jpg',        date: '2026.04.12', note: '爱你宝宝', tag: '记忆' },
+  { src: 'images/emoji1.png',                       date: '2026.05.26', note: '这是订制的哦，海边表情包', tag: '日常' },
+  { src: 'images/emoji-sea4.png',                   date: '2026.05.26', note: '厦门海边表情包！', tag: '海边' },
+  { src: 'images/emoji-xiamen2.png',                date: '2026.05.26', note: '厦门摄影版', tag: '日常' },
+  { src: 'images/emoji-dance3.png',                 date: '2026.05.26', note: '屈欣昱偶像idol平行世界风', tag: '日常' },
+  { src: 'images/mmexport1768664834661.jpg',        date: '2026.01.17', note: '', tag: '记忆' },
+  { src: 'images/mmexport1764691079329.jpg',        date: '2025.12.02', note: '砸吧砸吧已经', tag: '记忆' },
+  { src: 'images/3384153617794638135021.png',       date: '2026.05.22', note: '希望我们能一直玩一款都喜欢的游戏', tag: '记忆' },
 ];
 
 let staticModalIdx = 0;
@@ -3904,111 +3902,40 @@ function launchConfetti() {
 }
 
 /* ════════════════════════════════════
-   PHASE 3 — 背景音乐：小星星舒缓版
+   PHASE 3 — 背景音乐：真实音频版
 ════════════════════════════════════ */
 (function initMusic() {
-  let audioCtx = null;
-  let masterGain = null;
+  const audio = new Audio('audio/bgm.m4a');
+  audio.preload = 'auto';
+  audio.volume = 0.5;
   let isPlaying = false;
-  let stopFlag = false;
-  let scheduleTimer = null;
+  let gapTimer = null;
 
-  // 小星星完整旋律 (Hz) + 时值(拍)
-  // C C G G A A G  | F F E E D D C | G G F F E E D | G G F F E E D | C C G G A A G | F F E E D D C
-  const C4=261.63,D4=293.66,E4=329.63,F4=349.23,G4=392.00,A4=440.00,B4=493.88,C5=523.25;
-  const TWINKLE = [
-    [C4,1],[C4,1],[G4,1],[G4,1],[A4,1],[A4,1],[G4,2],
-    [F4,1],[F4,1],[E4,1],[E4,1],[D4,1],[D4,1],[C4,2],
-    [G4,1],[G4,1],[F4,1],[F4,1],[E4,1],[E4,1],[D4,2],
-    [G4,1],[G4,1],[F4,1],[F4,1],[E4,1],[E4,1],[D4,2],
-    [C4,1],[C4,1],[G4,1],[G4,1],[A4,1],[A4,1],[G4,2],
-    [F4,1],[F4,1],[E4,1],[E4,1],[D4,1],[D4,1],[C4,2],
-  ];
-  const BEAT = 0.52; // 秒/拍，越大越慢
-
-  function getCtx() {
-    if (!audioCtx) {
-      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      masterGain = audioCtx.createGain();
-      // 加一点混响感：用两个延迟叠加
-      const dry = audioCtx.createGain(); dry.gain.value = 0.7;
-      const wet = audioCtx.createGain(); wet.gain.value = 0.3;
-      const delay1 = audioCtx.createDelay(1.0); delay1.delayTime.value = 0.28;
-      const delay2 = audioCtx.createDelay(1.0); delay2.delayTime.value = 0.55;
-      const fbGain = audioCtx.createGain(); fbGain.gain.value = 0.25;
-      masterGain.connect(dry); dry.connect(audioCtx.destination);
-      masterGain.connect(delay1); delay1.connect(wet); wet.connect(audioCtx.destination);
-      delay1.connect(fbGain); fbGain.connect(delay1);
-      masterGain.gain.value = 0.0;
-    }
-    return audioCtx;
-  }
-
-  function playNote(ctx, freq, startTime, dur) {
-    // 主音：正弦波，模拟钢琴泛音
-    const osc  = ctx.createOscillator();
-    const osc2 = ctx.createOscillator(); // 高八度泛音
-    const env  = ctx.createGain();
-
-    osc.type = 'sine';
-    osc2.type = 'sine';
-    osc.frequency.value  = freq;
-    osc2.frequency.value = freq * 2;
-
-    const mixGain = ctx.createGain();
-    const mix2    = ctx.createGain();
-    mix2.gain.value = 0.08; // 泛音音量很轻
-
-    osc.connect(mixGain);  mixGain.connect(env);
-    osc2.connect(mix2);    mix2.connect(env);
-    env.connect(masterGain);
-
-    // ADSR：快速起音，缓慢衰减
-    env.gain.setValueAtTime(0, startTime);
-    env.gain.linearRampToValueAtTime(0.55, startTime + 0.02);
-    env.gain.exponentialRampToValueAtTime(0.18, startTime + dur * 0.5);
-    env.gain.exponentialRampToValueAtTime(0.001, startTime + dur * 0.95);
-
-    osc.start(startTime);  osc.stop(startTime + dur + 0.05);
-    osc2.start(startTime); osc2.stop(startTime + dur + 0.05);
-  }
-
-  function scheduleMelody() {
-    if (stopFlag) return;
-    const ctx = getCtx();
-    let t = ctx.currentTime + 0.08;
-    TWINKLE.forEach(([freq, beats]) => {
-      if (!stopFlag) playNote(ctx, freq, t, beats * BEAT * 0.9);
-      t += beats * BEAT;
-    });
-    const totalMs = TWINKLE.reduce((s,[,b]) => s + b, 0) * BEAT * 1000;
-    scheduleTimer = setTimeout(() => { if (!stopFlag) scheduleMelody(); }, totalMs - 200);
-  }
+  // 播放完毕后等 3 秒再循环
+  audio.addEventListener('ended', () => {
+    gapTimer = setTimeout(() => {
+      if (isPlaying) {
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
+      }
+    }, 3000);
+  });
 
   window.toggleMusic = function() {
     const btn  = document.getElementById('musicBtn');
     const info = document.getElementById('musicInfo');
     if (!isPlaying) {
-      stopFlag = false;
       isPlaying = true;
-      const ctx = getCtx();
-      if (ctx.state === 'suspended') ctx.resume();
-      // 淡入
-      masterGain.gain.cancelScheduledValues(ctx.currentTime);
-      masterGain.gain.linearRampToValueAtTime(0.18, ctx.currentTime + 0.8);
-      scheduleMelody();
+      audio.currentTime = 0;
+      audio.play().catch(() => {});
       btn.classList.add('playing');
       if (info) info.classList.add('visible');
-      document.getElementById('musicLabel').textContent = '小星星 · 轻柔版';
+      document.getElementById('musicLabel').textContent = '爱在光影交错时';
     } else {
-      stopFlag = true;
       isPlaying = false;
-      clearTimeout(scheduleTimer);
-      // 淡出
-      if (audioCtx) {
-        masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
-        masterGain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.6);
-      }
+      audio.pause();
+      audio.currentTime = 0;
+      clearTimeout(gapTimer);
       btn.classList.remove('playing');
       if (info) info.classList.remove('visible');
     }
