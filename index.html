@@ -2896,37 +2896,262 @@ footer {
 <div class="section-divider">· · · 🌊 · · ·</div>
 
 <!-- ════════════════════════════════════
-  06 · 真实相册
+  06 · 真实相册（硬编码版）
 ════════════════════════════════════ -->
 <section id="album" class="reveal">
   <div class="section-label">📷 我们的相册</div>
   <h2 class="section-title">一整年的记忆</h2>
   <p class="section-sub">把我们在一起的照片放进来，每一张都是认真收藏的。</p>
 
-  <!-- 上传区 -->
-  <div class="album-upload-row">
-    <label class="album-upload-btn" for="photoUpload">
-      <span>📷</span> 添加新照片
-      <input type="file" id="photoUpload" accept="image/*" multiple style="display:none" onchange="handlePhotoUpload(event)">
-    </label>
-    <div class="album-sort-wrap">
-      <span class="album-sort-label">排序：</span>
-      <button class="album-sort-btn active" id="sortNew" onclick="setAlbumSort('new')">最新</button>
-      <button class="album-sort-btn" id="sortOld" onclick="setAlbumSort('old')">最早</button>
-    </div>
-  </div>
-
-  <!-- 相册网格 -->
   <div class="photo-grid" id="photoGrid">
-    <div class="photo-empty" id="photoEmpty">
-      <div class="photo-empty-icon">🌸</div>
-      <div class="photo-empty-text">还没有照片</div>
-      <div class="photo-empty-sub">点击上方「添加新照片」上传你们的第一张</div>
+
+    <!-- ① -->
+    <div class="photo-card" onclick="openStaticModal(0)">
+      <img src="images/IMG_20250831_124713.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date">2025.08.31</div>
+        <div class="photo-card-note"></div>
+      </div>
     </div>
+
+    <!-- ② -->
+    <div class="photo-card" onclick="openStaticModal(1)">
+      <img src="images/IMG_20251020_221423.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date">2025.10.20</div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ③ -->
+    <div class="photo-card" onclick="openStaticModal(2)">
+      <img src="images/Image_1760196165462.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ④ -->
+    <div class="photo-card" onclick="openStaticModal(3)">
+      <img src="images/Screenshot_20250315_132838.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date">2025.03.15</div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑤ -->
+    <div class="photo-card" onclick="openStaticModal(4)">
+      <img src="images/mmexport1741946452537.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑥ -->
+    <div class="photo-card" onclick="openStaticModal(5)">
+      <img src="images/mmexport1741967380420.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑦ -->
+    <div class="photo-card" onclick="openStaticModal(6)">
+      <img src="images/mmexport1742016525065.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑧ -->
+    <div class="photo-card" onclick="openStaticModal(7)">
+      <img src="images/mmexport1742478733947.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑨ -->
+    <div class="photo-card" onclick="openStaticModal(8)">
+      <img src="images/mmexport1742478764772.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑩ -->
+    <div class="photo-card" onclick="openStaticModal(9)">
+      <img src="images/mmexport1748442175346.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑪ -->
+    <div class="photo-card" onclick="openStaticModal(10)">
+      <img src="images/mmexport1748442565634.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑫ -->
+    <div class="photo-card" onclick="openStaticModal(11)">
+      <img src="images/mmexport1752465403529.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑬ -->
+    <div class="photo-card" onclick="openStaticModal(12)">
+      <img src="images/mmexport1753797915073.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑭ -->
+    <div class="photo-card" onclick="openStaticModal(13)">
+      <img src="images/mmexport1754219414233.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑮ -->
+    <div class="photo-card" onclick="openStaticModal(14)">
+      <img src="images/mmexport1754230504158.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑯ -->
+    <div class="photo-card" onclick="openStaticModal(15)">
+      <img src="images/mmexport1755958943078.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑰ -->
+    <div class="photo-card" onclick="openStaticModal(16)">
+      <img src="images/mmexport1757994431160.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑱ -->
+    <div class="photo-card" onclick="openStaticModal(17)">
+      <img src="images/IMG_20260411_161227.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date">2026.04.11</div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑲ -->
+    <div class="photo-card" onclick="openStaticModal(18)">
+      <img src="images/IMG_20260411_165033.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date">2026.04.11</div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ⑳ -->
+    <div class="photo-card" onclick="openStaticModal(19)">
+      <img src="images/mmexport1775954135689.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉑ -->
+    <div class="photo-card" onclick="openStaticModal(20)">
+      <img src="images/mmexport1776003154804.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉒ -->
+    <div class="photo-card" onclick="openStaticModal(21)">
+      <img src="images/mmexport1776003377086.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉓ -->
+    <div class="photo-card" onclick="openStaticModal(22)">
+      <img src="images/mmexport1776003408006.jpg" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉔ emoji1 -->
+    <div class="photo-card" onclick="openStaticModal(23)">
+      <img src="images/emoji1.png" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉕ emoji-sea4 -->
+    <div class="photo-card" onclick="openStaticModal(24)">
+      <img src="images/emoji-sea4.png" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉖ emoji-xiamen2 -->
+    <div class="photo-card" onclick="openStaticModal(25)">
+      <img src="images/emoji-xiamen2.png" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
+    <!-- ㉗ emoji-dance3 -->
+    <div class="photo-card" onclick="openStaticModal(26)">
+      <img src="images/emoji-dance3.png" alt="" loading="lazy">
+      <div class="photo-card-overlay">
+        <div class="photo-card-date"></div>
+        <div class="photo-card-note"></div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="album-count-bar" id="albumCountBar" style="display:none">
-    <span id="albumCount">0</span> 张照片 · 每一张都被认真收藏
+  <div class="album-count-bar">
+    <span>27</span> 张照片 · 每一张都被认真收藏
   </div>
 </section>
 
@@ -2944,51 +3169,14 @@ footer {
       </div>
       <div class="photo-modal-note" id="photoModalNote"></div>
       <div class="photo-modal-actions">
-        <button class="btn btn-ghost" id="photoModalPrev" onclick="photoModalNav(-1)">← 上一张</button>
-        <button class="btn btn-ghost" id="photoModalNext" onclick="photoModalNav(1)">下一张 →</button>
-        <button class="btn btn-secondary" style="margin-left:auto" onclick="deleteCurrentPhoto()">🗑 删除</button>
+        <button class="btn btn-ghost" id="photoModalPrev" onclick="staticModalNav(-1)">← 上一张</button>
+        <button class="btn btn-ghost" id="photoModalNext" onclick="staticModalNav(1)">下一张 →</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- 照片编辑弹窗（上传后填信息） -->
-<div class="photo-edit-overlay" id="photoEditOverlay">
-  <div class="photo-edit-box">
-    <div class="photo-edit-title">📸 为这张照片加点说明</div>
-    <div class="photo-edit-preview-wrap">
-      <img id="photoEditPreview" src="" alt="" class="photo-edit-preview">
-    </div>
-    <div class="photo-edit-fields">
-      <div class="photo-field-group">
-        <label class="photo-field-label">📅 日期</label>
-        <input type="date" id="photoEditDate" class="photo-field-input">
-      </div>
-      <div class="photo-field-group">
-        <label class="photo-field-label">🏷 标签</label>
-        <div class="photo-tag-options" id="photoTagOptions">
-          <button class="photo-tag-opt active" data-tag="记忆">记忆</button>
-          <button class="photo-tag-opt" data-tag="心动">心动</button>
-          <button class="photo-tag-opt" data-tag="海边">海边</button>
-          <button class="photo-tag-opt" data-tag="运动">运动</button>
-          <button class="photo-tag-opt" data-tag="美食">美食</button>
-          <button class="photo-tag-opt" data-tag="日常">日常</button>
-          <button class="photo-tag-opt" data-tag="特别">特别</button>
-          <button class="photo-tag-opt" data-tag="生日">生日</button>
-        </div>
-      </div>
-      <div class="photo-field-group">
-        <label class="photo-field-label">💬 这张照片的故事</label>
-        <textarea id="photoEditNote" class="photo-field-textarea" placeholder="那天的天气，那天你说的话，那天发生的事……" maxlength="100"></textarea>
-        <div class="photo-field-count" id="photoEditNoteCount">0 / 100</div>
-      </div>
-    </div>
-    <div class="photo-edit-btns">
-      <button class="btn btn-ghost" onclick="cancelPhotoEdit()">跳过</button>
-      <button class="btn btn-primary" onclick="confirmPhotoEdit()">💾 保存这张</button>
-    </div>
-  </div>
-</div>
+
 
 <div class="section-divider">· · · 🍓 · · ·</div>
 
@@ -3115,10 +3303,10 @@ footer {
     <div class="letter-paper">
       <div class="letter-lines" id="letterLines"></div>
       <div class="letter-heading" id="letterHeading"></div>
-      <div class="letter-salutation">亲爱的欣昱，</div>
+      <div class="letter-salutation">亲爱的屈欣昱，</div>
       <div class="letter-body" id="letterBody"><span class="typewriter-cursor hidden" id="typeCursor"></span></div>
       <div class="letter-sign" id="letterSign">
-        <div class="letter-sign-from">韩旭 敬上</div>
+        <div class="letter-sign-from">爱你的韩旭</div>
         <div class="letter-sign-date" id="letterSignDate"></div>
       </div>
     </div>
@@ -3416,231 +3604,75 @@ const io = new IntersectionObserver((entries) => {
 revealEls.forEach(el => io.observe(el));
 
 /* ════════════════════════════════════
-   真实相册 — localStorage + FileReader
+   静态相册数据
 ════════════════════════════════════ */
-(function initAlbum() {
-  const STORE_KEY = 'qxy_photos_v2';
-  let photos = [];         // [{id, dataUrl, date, tag, note, ts}]
-  let editQueue = [];      // 待编辑的上传队列
-  let currentEditIdx = 0;
-  let currentEditData = null;
-  let selectedTag = '记忆';
-  let sortOrder = 'new';   // 'new' | 'old'
-  let modalPhotoIdx = -1;  // index in photos[] of currently open modal
-  let sortedCache = [];    // last sorted array, used for nav
+const staticPhotos = [
+  // ① 以下每项：src=图片路径, date=日期, note=备注, tag=标签
+  // 你只需修改 date / note / tag 三项，src 不要动
+  { src: 'images/IMG_20250831_124713.jpg',         date: '2025.08.31', note: '', tag: '记忆' },
+  { src: 'images/IMG_20251020_221423.jpg',         date: '2025.10.20', note: '', tag: '记忆' },
+  { src: 'images/Image_1760196165462.jpg',         date: '',           note: '', tag: '记忆' },
+  { src: 'images/Screenshot_20250315_132838.jpg',  date: '2025.03.15', note: '', tag: '记忆' },
+  { src: 'images/mmexport1741946452537.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1741967380420.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1742016525065.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1742478733947.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1742478764772.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1748442175346.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1748442565634.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1752465403529.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1753797915073.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1754219414233.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1754230504158.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1755958943078.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1757994431160.jpg',       date: '',           note: '', tag: '记忆' },
+  { src: 'images/IMG_20260411_161227.jpg',          date: '2026.04.11', note: '', tag: '记忆' },
+  { src: 'images/IMG_20260411_165033.jpg',          date: '2026.04.11', note: '', tag: '记忆' },
+  { src: 'images/mmexport1775954135689.jpg',        date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1776003154804.jpg',        date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1776003377086.jpg',        date: '',           note: '', tag: '记忆' },
+  { src: 'images/mmexport1776003408006.jpg',        date: '',           note: '', tag: '记忆' },
+  { src: 'images/emoji1.png',                       date: '',           note: '', tag: '日常' },
+  { src: 'images/emoji-sea4.png',                   date: '',           note: '', tag: '海边' },
+  { src: 'images/emoji-xiamen2.png',                date: '',           note: '', tag: '日常' },
+  { src: 'images/emoji-dance3.png',                 date: '',           note: '', tag: '日常' },
+];
 
-  /* ── 读写 ── */
-  function load() {
-    try { photos = JSON.parse(localStorage.getItem(STORE_KEY) || '[]'); } catch(e){ photos=[]; }
-  }
-  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(photos)); }
+let staticModalIdx = 0;
 
-  /* ── 渲染网格 ── */
-  function renderGrid() {
-    const grid = document.getElementById('photoGrid');
-    const empty = document.getElementById('photoEmpty');
-    const countBar = document.getElementById('albumCountBar');
-    const countEl = document.getElementById('albumCount');
-    if (!grid) return;
+window.openStaticModal = function(idx) {
+  staticModalIdx = idx;
+  renderStaticModal(idx);
+  document.getElementById('photoModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
 
-    sortedCache = [...photos].sort((a,b) =>
-      sortOrder === 'new' ? b.ts - a.ts : a.ts - b.ts
-    );
+function renderStaticModal(idx) {
+  const p = staticPhotos[idx];
+  if (!p) return;
+  const img = document.getElementById('photoModalImg');
+  img.style.opacity = '0';
+  img.src = p.src;
+  img.onload = () => { img.style.transition = 'opacity 0.2s'; img.style.opacity = '1'; };
+  document.getElementById('photoModalDate').textContent = p.date || '';
+  document.getElementById('photoModalTag').textContent  = p.tag  || '';
+  document.getElementById('photoModalNote').textContent = p.note || '这张照片没有留下文字，但被认真收藏了。';
+  document.getElementById('photoModalPrev').disabled = idx <= 0;
+  document.getElementById('photoModalNext').disabled = idx >= staticPhotos.length - 1;
+}
 
-    if (sortedCache.length === 0) {
-      grid.innerHTML = '';
-      grid.appendChild(empty || createEmpty());
-      if (countBar) countBar.style.display = 'none';
-      return;
-    }
-    if (countBar) { countBar.style.display = 'block'; countEl.textContent = sortedCache.length; }
+window.staticModalNav = function(dir) {
+  const next = staticModalIdx + dir;
+  if (next < 0 || next >= staticPhotos.length) return;
+  staticModalIdx = next;
+  renderStaticModal(next);
+};
 
-    grid.innerHTML = sortedCache.map((p, i) => {
-      const dateStr = p.date ? p.date.replace(/-/g,'.') : '';
-      return `
-      <div class="photo-card" onclick="openPhotoModal(${i})" style="animation:cardFadeIn 0.3s ${i*0.04}s ease both;">
-        <img src="${p.dataUrl}" alt="" loading="lazy">
-        <div class="photo-card-overlay">
-          <div class="photo-card-date">${dateStr}</div>
-          <div class="photo-card-note">${escH(p.note||'')}</div>
-        </div>
-        ${p.tag ? `<div class="photo-card-tag">${escH(p.tag)}</div>` : ''}
-      </div>`;
-    }).join('');
-  }
-
-  function escH(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-
-  /* ── 上传处理 ── */
-  window.handlePhotoUpload = function(e) {
-    const files = Array.from(e.target.files);
-    e.target.value = '';
-    if (!files.length) return;
-    editQueue = [];
-    // 读取所有文件的 dataUrl
-    let done = 0;
-    files.forEach((file, i) => {
-      const reader = new FileReader();
-      reader.onload = ev => {
-        editQueue[i] = ev.target.result;
-        done++;
-        if (done === files.length) startEditQueue();
-      };
-      reader.readAsDataURL(file);
-    });
-  };
-
-  function startEditQueue() {
-    currentEditIdx = 0;
-    openEditDialog(editQueue[0]);
-  }
-
-  function openEditDialog(dataUrl) {
-    currentEditData = dataUrl;
-    document.getElementById('photoEditPreview').src = dataUrl;
-    // 设置今天日期为默认
-    const today = new Date();
-    document.getElementById('photoEditDate').value =
-      `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
-    document.getElementById('photoEditNote').value = '';
-    document.getElementById('photoEditNoteCount').textContent = '0 / 100';
-    // 重置标签
-    selectedTag = '记忆';
-    document.querySelectorAll('.photo-tag-opt').forEach(b => {
-      b.classList.toggle('active', b.dataset.tag === selectedTag);
-    });
-    document.getElementById('photoEditOverlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  // 标签点击
-  document.addEventListener('click', e => {
-    if (e.target.classList.contains('photo-tag-opt')) {
-      document.querySelectorAll('.photo-tag-opt').forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-      selectedTag = e.target.dataset.tag;
-    }
-  });
-
-  // 字数统计
-  const noteTA = document.getElementById('photoEditNote');
-  if (noteTA) {
-    noteTA.addEventListener('input', () => {
-      document.getElementById('photoEditNoteCount').textContent = noteTA.value.length + ' / 100';
-    });
-  }
-
-  window.confirmPhotoEdit = function() {
-    load();
-    photos.push({
-      id: Date.now() + Math.random(),
-      dataUrl: currentEditData,
-      date: document.getElementById('photoEditDate').value,
-      tag:  selectedTag,
-      note: document.getElementById('photoEditNote').value.trim(),
-      ts:   Date.now(),
-    });
-    save();
-    closeEditDialog();
-    nextEdit();
-  };
-
-  window.cancelPhotoEdit = function() {
-    load();
-    photos.push({
-      id: Date.now() + Math.random(),
-      dataUrl: currentEditData,
-      date: '',  tag: '', note: '', ts: Date.now(),
-    });
-    save();
-    closeEditDialog();
-    nextEdit();
-  };
-
-  function closeEditDialog() {
-    document.getElementById('photoEditOverlay').classList.remove('open');
-    document.body.style.overflow = '';
-    currentEditData = null;
-  }
-
-  function nextEdit() {
-    currentEditIdx++;
-    if (currentEditIdx < editQueue.length) {
-      setTimeout(() => openEditDialog(editQueue[currentEditIdx]), 200);
-    } else {
-      renderGrid();
-      showToast('📷 照片已保存到相册 💗');
-    }
-  }
-
-  /* ── 大图弹窗 ── */
-  window.openPhotoModal = function(sortedIdx) {
-    if (!sortedCache[sortedIdx]) return;
-    modalPhotoIdx = sortedIdx;
-    renderModal(sortedIdx);
-    document.getElementById('photoModalOverlay').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  };
-
-  function renderModal(sortedIdx) {
-    const p = sortedCache[sortedIdx];
-    if (!p) return;
-    document.getElementById('photoModalImg').src = p.dataUrl;
-    document.getElementById('photoModalDate').textContent = p.date ? p.date.replace(/-/g,'.') : '';
-    document.getElementById('photoModalTag').textContent = p.tag || '';
-    document.getElementById('photoModalNote').textContent = p.note || '这张照片没有留下文字，但被认真收藏了。';
-    document.getElementById('photoModalPrev').disabled = sortedIdx <= 0;
-    document.getElementById('photoModalNext').disabled = sortedIdx >= sortedCache.length - 1;
-  }
-
-  window.closePhotoModal = function(e) {
-    if (e && e.target !== document.getElementById('photoModalOverlay')) return;
-    document.getElementById('photoModalOverlay').classList.remove('open');
-    document.body.style.overflow = '';
-  };
-
-  window.photoModalNav = function(dir) {
-    const next = modalPhotoIdx + dir;
-    if (next < 0 || next >= sortedCache.length) return;
-    modalPhotoIdx = next;
-    const img = document.getElementById('photoModalImg');
-    img.style.opacity = '0';
-    setTimeout(() => {
-      renderModal(next);
-      img.style.transition = 'opacity 0.2s';
-      img.style.opacity = '1';
-    }, 120);
-  };
-
-  window.deleteCurrentPhoto = function() {
-    if (!confirm('确定删除这张照片？')) return;
-    const target = sortedCache[modalPhotoIdx];
-    if (!target) { showToast('找不到照片，请刷新后重试'); return; }
-    // 直接在内存数组里找，不重新 load（避免 id 浮点比较失败）
-    const realIdx = photos.findIndex(p => p === target);
-    if (realIdx === -1) { showToast('找不到照片，请刷新后重试'); return; }
-    photos.splice(realIdx, 1);
-    sortedCache.splice(modalPhotoIdx, 1);
-    save();
-    document.getElementById('photoModalOverlay').classList.remove('open');
-    document.body.style.overflow = '';
-    renderGrid();
-    showToast('已删除 🗑');
-  };
-
-  /* ── 排序 ── */
-  window.setAlbumSort = function(order) {
-    sortOrder = order;
-    document.getElementById('sortNew').classList.toggle('active', order === 'new');
-    document.getElementById('sortOld').classList.toggle('active', order === 'old');
-    renderGrid();
-  };
-
-  /* ── 初始化 ── */
-  load();
-  renderGrid();
-})();
-
+window.closePhotoModal = function(e) {
+  if (e && e.target !== document.getElementById('photoModalOverlay')) return;
+  document.getElementById('photoModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+};
 /* ════════════════════════════════════
    点击粒子 + 可爱音效
 ════════════════════════════════════ */
@@ -3957,8 +3989,7 @@ function launchConfetti() {
    PHASE 3 — 打字机信件
 ════════════════════════════════════ */
 (function initLetter() {
-  const d = new Date();
-  const dateStr = `${d.getFullYear()} 年 ${d.getMonth()+1} 月 ${d.getDate()} 日`;
+  const dateStr = '2026 年 5 月 28 日';
   const headEl = document.getElementById('letterHeading');
   const signDateEl = document.getElementById('letterSignDate');
   if (headEl) headEl.textContent = dateStr;
@@ -3976,27 +4007,33 @@ function launchConfetti() {
   }
 })();
 
-const LETTER_TEXT = `我不太会写信。
+const LETTER_TEXT = `生日快乐！最近的一年里，有我在的每天你还开心吗？起码要保持快乐才能做好每件事。
 
-这是我第一次认真做一个网页，也是第一次觉得自己应该花这么多时间在一件事上。
+一年以来，你最大的变化就是能更加理解我、关心我，我很感谢叔叔阿姨，教导出很优秀的你。我对你的了解似乎更深刻、更用心了。
 
-说实话，做这个的时候有很多次想放弃。颜色调了很久，卡片位置对不齐，手机上看和电脑上看不一样，有个动画死活转不对……但每次想到这是给你的，就又打开来重新改。
+当时间拉长，一时的新鲜感可能会褪去，但是你在我心里那五彩斑斓的底色永不改变。屈欣昱还是一直那么体贴善良、明辨是非。
 
-我不知道你会不会觉得这很普通。毕竟它没有什么实体，不能拿在手里，也可能哪里还有 bug 我没发现。但这里面的每一句话，都是我认真想过才写进去的。
+你和我也一起遇到不少事，我很多时候都在担心——你在学校不回我，会不会是睡着了？亦或者是出现一些棘手的事情，让你无暇顾及呢？我好心疼你呀。
 
-你知道吗，那天你告诉我你要找实习的时候，我记了很久。不是因为实习这件事，是因为你说起未来的样子。我当时想，这个人认真生活，认真向前走，真的很值得被好好珍惜。
+我还记得很清楚，一两年前，你在七楼来回跑，我就坐在办公室旁边的沙发上看着你。现在看来你一直是一个勤劳的小豆豆，更心疼了——为什么我不能帮你呢？
 
-后来我们一起去海边，我记得风很大，你头发有点乱，但你笑起来的时候，我觉得那天特别值得。
+秉持着这种想法，于是在 2025 年，我选择了找工作，来实实在在地做好未来的打算。你在我心里已经是不可缺少的那部分，谢谢你，屈欣昱宝宝。
 
-还有你保研的那天。我真的很替你开心。不是那种客气的开心，是真的觉得这件事是你应得的。
+我希望你在来回跑的时候小心脚下，不要再摔倒，丢掉幸运。
+我希望我买的新鞋合脚，生活不再磕磕绊绊。
+我希望我给你买的睡衣足够舒适，睡觉可以睡得更放松。
+我希望你看到这些不只是感动开心。
+我希望你永远为自己而活，为自己着想。
+我希望你可以用上我买的安睡裤，不会再因为这种事情困扰或者纠结。
+我希望你喜欢海洋之泪，它记录着我们去威海的日子，也提醒着不要再留下眼泪。
+我希望你的贴身衣物干干净净，请穿着我买的袜子继续探险。
+我希望你可以继续拿起拍立得，享受独属于你的摄影时间。
 
-我不擅长当面说这些，说到一半会觉得太肉麻然后跑题。所以我把它们写在这里。
+我希望的太多太多。
 
-如果你读到这里，谢谢你打开了这颗星球。
+祝你生日快乐，屈欣昱。未来的日子，我希望和你一起度过。
 
-它可能不完美，但它是我现在能做到的、最认真的一件事。
-
-生日快乐，屈欣昱。`;
+生日快乐，屈欣昱，愿你新的一岁平安顺遂，心想事成。韩旭不再惹你生气！`;
 
 
 let typewriterRunning = false;
